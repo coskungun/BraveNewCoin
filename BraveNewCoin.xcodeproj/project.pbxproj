@@ -17,7 +17,6 @@
 		00845E1C281AA37F00B61E1A /* BraveNewCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E1B281AA37F00B61E1A /* BraveNewCoinUITests.swift */; };
 		00845E1E281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */; };
 		00845E2B281AA41400B61E1A /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E2A281AA41400B61E1A /* NetworkHelpers.swift */; };
-		00845E2E281AA45400B61E1A /* ObjLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E2D281AA45400B61E1A /* ObjLoginModel.swift */; };
 		00845E31281AA4B000B61E1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E30281AA4B000B61E1A /* Constant.swift */; };
 		00845E34281AA65A00B61E1A /* CreateTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E33281AA65A00B61E1A /* CreateTokenViewController.swift */; };
 		00845E36281AA8E300B61E1A /* MarketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E35281AA8E300B61E1A /* MarketListViewController.swift */; };
@@ -77,7 +76,6 @@
 		00845E1B281AA37F00B61E1A /* BraveNewCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveNewCoinUITests.swift; sourceTree = "<group>"; };
 		00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveNewCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		00845E2A281AA41400B61E1A /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
-		00845E2D281AA45400B61E1A /* ObjLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjLoginModel.swift; sourceTree = "<group>"; };
 		00845E30281AA4B000B61E1A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		00845E33281AA65A00B61E1A /* CreateTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenViewController.swift; sourceTree = "<group>"; };
 		00845E35281AA8E300B61E1A /* MarketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			children = (
 				00845E32281AA64300B61E1A /* ViewControllers */,
 				00845E2F281AA4A400B61E1A /* Utils */,
-				00845E2C281AA44000B61E1A /* Models */,
 				00845DFA281AA37D00B61E1A /* AppDelegate.swift */,
 				00845DFC281AA37D00B61E1A /* SceneDelegate.swift */,
 				00845E00281AA37D00B61E1A /* Main.storyboard */,
@@ -192,14 +189,6 @@
 				00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */,
 			);
 			path = BraveNewCoinUITests;
-			sourceTree = "<group>";
-		};
-		00845E2C281AA44000B61E1A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				00845E2D281AA45400B61E1A /* ObjLoginModel.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		00845E2F281AA4A400B61E1A /* Utils */ = {
@@ -564,7 +553,6 @@
 			files = (
 				00845E36281AA8E300B61E1A /* MarketListViewController.swift in Sources */,
 				00845E38281AA8ED00B61E1A /* AssetListViewController.swift in Sources */,
-				00845E2E281AA45400B61E1A /* ObjLoginModel.swift in Sources */,
 				00845E66281AFA5900B61E1A /* AssetDetailViewModel.swift in Sources */,
 				00845E2B281AA41400B61E1A /* NetworkHelpers.swift in Sources */,
 				00845E68281AFA6300B61E1A /* AssetDetailModel.swift in Sources */,
