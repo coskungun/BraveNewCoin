@@ -1,0 +1,6 @@
+framework module Pods_BraveNewCoin_BraveNewCoinUITests {
+  umbrella header "Pods-BraveNewCoin-BraveNewCoinUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

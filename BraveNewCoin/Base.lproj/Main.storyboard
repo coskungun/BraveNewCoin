@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5lj-pA-LaW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChoiceViewController" customModule="BraveNewCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="b4Q-rw-dc5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gk-ce-VCU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="287.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Create Token "/>
+                                        <connections>
+                                            <action selector="createTokenClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ca-jo-jMT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRo-ME-apc">
+                                        <rect key="frame" x="0.0" y="287.5" width="414" height="287"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Market List"/>
+                                        <connections>
+                                            <action selector="marketListClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qjU-rd-xdX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9f-CA-vC7">
+                                        <rect key="frame" x="0.0" y="574.5" width="414" height="287.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Asset List"/>
+                                        <connections>
+                                            <action selector="assetListClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXG-co-J6g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b4Q-rw-dc5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4al-xW-ulz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="b4Q-rw-dc5" secondAttribute="trailing" id="I2j-ET-Plz"/>
+                            <constraint firstItem="b4Q-rw-dc5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bIa-dW-I5s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b4Q-rw-dc5" secondAttribute="bottom" id="e7o-vB-JK8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HNM-WU-vaV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="97.767857142857139"/>
+        </scene>
+        <!--Create Token View Controller-->
+        <scene sceneID="OQS-2B-6ST">
+            <objects>
+                <viewController storyboardIdentifier="createToken" id="UZW-GI-tKi" customClass="CreateTokenViewController" customModule="BraveNewCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4R-ew-4ib">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="o29-A6-pgm">
+                                <rect key="frame" x="10" y="44" width="394" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBV-17-Sdk">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="EdA-rT-SSC"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Generate Token"/>
+                                        <connections>
+                                            <action selector="generateTokenClick:" destination="UZW-GI-tKi" eventType="touchUpInside" id="bUy-ex-3CR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9A-Fi-Krm">
+                                        <rect key="frame" x="0.0" y="135" width="394" height="683"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dRW-bl-gEM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dRW-bl-gEM" firstAttribute="bottom" secondItem="o29-A6-pgm" secondAttribute="bottom" id="22a-yL-RI8"/>
+                            <constraint firstItem="dRW-bl-gEM" firstAttribute="trailing" secondItem="o29-A6-pgm" secondAttribute="trailing" constant="10" id="39T-1W-oRh"/>
+                            <constraint firstItem="o29-A6-pgm" firstAttribute="top" secondItem="dRW-bl-gEM" secondAttribute="top" id="oqT-vI-Bjk"/>
+                            <constraint firstItem="o29-A6-pgm" firstAttribute="leading" secondItem="dRW-bl-gEM" secondAttribute="leading" constant="10" id="uW9-g0-a0p"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblToken" destination="e9A-Fi-Krm" id="V1H-aj-wpL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9E-Kw-H0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1568.1159420289857" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J09-9x-cZf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5lj-pA-LaW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2MQ-13-FVg">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TOD-1s-Yvj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lyz-2b-Qe7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="98"/>
+        </scene>
+        <!--Asset List View Controller-->
+        <scene sceneID="LcY-zG-4pL">
+            <objects>
+                <viewController storyboardIdentifier="assetList" id="Ci2-Sm-Ead" customClass="AssetListViewController" customModule="BraveNewCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tFR-6n-CW6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wji-yO-yZx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yat-sX-MMn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wji-yO-yZx" firstAttribute="leading" secondItem="yat-sX-MMn" secondAttribute="leading" id="00l-gi-HRL"/>
+                            <constraint firstItem="yat-sX-MMn" firstAttribute="bottom" secondItem="wji-yO-yZx" secondAttribute="bottom" id="DZw-PP-Ulf"/>
+                            <constraint firstItem="wji-yO-yZx" firstAttribute="top" secondItem="yat-sX-MMn" secondAttribute="top" id="JpF-92-zbA"/>
+                            <constraint firstItem="yat-sX-MMn" firstAttribute="trailing" secondItem="wji-yO-yZx" secondAttribute="trailing" id="SnU-Mt-1vW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqk-8x-j0G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2825" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

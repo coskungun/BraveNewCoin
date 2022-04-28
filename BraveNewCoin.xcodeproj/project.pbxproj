@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00845DFB281AA37D00B61E1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845DFA281AA37D00B61E1A /* AppDelegate.swift */; };
+		00845DFD281AA37D00B61E1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845DFC281AA37D00B61E1A /* SceneDelegate.swift */; };
+		00845DFF281AA37D00B61E1A /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845DFE281AA37D00B61E1A /* ChoiceViewController.swift */; };
+		00845E02281AA37D00B61E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00845E00281AA37D00B61E1A /* Main.storyboard */; };
+		00845E04281AA37E00B61E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00845E03281AA37E00B61E1A /* Assets.xcassets */; };
+		00845E07281AA37E00B61E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00845E05281AA37E00B61E1A /* LaunchScreen.storyboard */; };
+		00845E12281AA37F00B61E1A /* BraveNewCoinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E11281AA37F00B61E1A /* BraveNewCoinTests.swift */; };
+		00845E1C281AA37F00B61E1A /* BraveNewCoinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E1B281AA37F00B61E1A /* BraveNewCoinUITests.swift */; };
+		00845E1E281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */; };
+		00845E2B281AA41400B61E1A /* NetworkHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E2A281AA41400B61E1A /* NetworkHelpers.swift */; };
+		00845E2E281AA45400B61E1A /* ObjLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E2D281AA45400B61E1A /* ObjLoginModel.swift */; };
+		00845E31281AA4B000B61E1A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E30281AA4B000B61E1A /* Constant.swift */; };
+		00845E34281AA65A00B61E1A /* CreateTokenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E33281AA65A00B61E1A /* CreateTokenViewController.swift */; };
+		00845E36281AA8E300B61E1A /* MarketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E35281AA8E300B61E1A /* MarketListViewController.swift */; };
+		00845E38281AA8ED00B61E1A /* AssetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E37281AA8ED00B61E1A /* AssetListViewController.swift */; };
+		00845E3A281AAA7300B61E1A /* CreateTokenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E39281AAA7300B61E1A /* CreateTokenViewModel.swift */; };
+		00845E3C281AAA8200B61E1A /* CreateTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E3B281AAA8200B61E1A /* CreateTokenModel.swift */; };
+		00845E40281AC56800B61E1A /* MarketListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E3F281AC56800B61E1A /* MarketListViewModel.swift */; };
+		00845E42281AC57300B61E1A /* MarketListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E41281AC57300B61E1A /* MarketListModel.swift */; };
+		00845E49281AD9A100B61E1A /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E47281AD9A100B61E1A /* MarketTableViewCell.swift */; };
+		00845E4A281AD9A100B61E1A /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00845E48281AD9A100B61E1A /* MarketTableViewCell.xib */; };
+		00845E4C281ADC7500B61E1A /* MarketModulStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00845E4B281ADC7500B61E1A /* MarketModulStoryboard.storyboard */; };
+		00845E4F281ADFD900B61E1A /* MarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E4E281ADFD900B61E1A /* MarketDetailViewController.swift */; };
+		00845E53281AE70800B61E1A /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E52281AE70800B61E1A /* MarketDetailViewModel.swift */; };
+		00845E55281AEB0900B61E1A /* MarketDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E54281AEB0900B61E1A /* MarketDetailModel.swift */; };
+		00845E58281AF0B800B61E1A /* AssetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E57281AF0B800B61E1A /* AssetListViewModel.swift */; };
+		00845E5A281AF0C400B61E1A /* AssetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E59281AF0C400B61E1A /* AssetListModel.swift */; };
+		00845E5C281AF31700B61E1A /* AssetModulStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00845E5B281AF31700B61E1A /* AssetModulStoryboard.storyboard */; };
+		00845E5F281AF3B400B61E1A /* AssetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E5D281AF3B400B61E1A /* AssetListTableViewCell.swift */; };
+		00845E60281AF3B400B61E1A /* AssetListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00845E5E281AF3B400B61E1A /* AssetListTableViewCell.xib */; };
+		00845E64281AFA4C00B61E1A /* AssetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E63281AFA4C00B61E1A /* AssetDetailViewController.swift */; };
+		00845E66281AFA5900B61E1A /* AssetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E65281AFA5900B61E1A /* AssetDetailViewModel.swift */; };
+		00845E68281AFA6300B61E1A /* AssetDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00845E67281AFA6300B61E1A /* AssetDetailModel.swift */; };
+		22C05A44033C5CB60C98DC29 /* Pods_BraveNewCoin_BraveNewCoinUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DFDDCEF14FF57DBB88B41E /* Pods_BraveNewCoin_BraveNewCoinUITests.framework */; };
+		4131DC9E712256988B9D47E0 /* Pods_BraveNewCoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACFA461A8F7A53924F1BC6C /* Pods_BraveNewCoin.framework */; };
+		F0F05E37DC89B1265ACAC77E /* Pods_BraveNewCoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FDAED2FB269BC8C8A982BA0 /* Pods_BraveNewCoinTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00845E0E281AA37F00B61E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00845DEF281AA37D00B61E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00845DF6281AA37D00B61E1A;
+			remoteInfo = BraveNewCoin;
+		};
+		00845E18281AA37F00B61E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00845DEF281AA37D00B61E1A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00845DF6281AA37D00B61E1A;
+			remoteInfo = BraveNewCoin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00845DF7281AA37D00B61E1A /* BraveNewCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BraveNewCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00845DFA281AA37D00B61E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00845DFC281AA37D00B61E1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		00845DFE281AA37D00B61E1A /* ChoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceViewController.swift; sourceTree = "<group>"; };
+		00845E01281AA37D00B61E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00845E03281AA37E00B61E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00845E06281AA37E00B61E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00845E08281AA37E00B61E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00845E0D281AA37F00B61E1A /* BraveNewCoinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveNewCoinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00845E11281AA37F00B61E1A /* BraveNewCoinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveNewCoinTests.swift; sourceTree = "<group>"; };
+		00845E17281AA37F00B61E1A /* BraveNewCoinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BraveNewCoinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00845E1B281AA37F00B61E1A /* BraveNewCoinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveNewCoinUITests.swift; sourceTree = "<group>"; };
+		00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BraveNewCoinUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00845E2A281AA41400B61E1A /* NetworkHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelpers.swift; sourceTree = "<group>"; };
+		00845E2D281AA45400B61E1A /* ObjLoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjLoginModel.swift; sourceTree = "<group>"; };
+		00845E30281AA4B000B61E1A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		00845E33281AA65A00B61E1A /* CreateTokenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenViewController.swift; sourceTree = "<group>"; };
+		00845E35281AA8E300B61E1A /* MarketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewController.swift; sourceTree = "<group>"; };
+		00845E37281AA8ED00B61E1A /* AssetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListViewController.swift; sourceTree = "<group>"; };
+		00845E39281AAA7300B61E1A /* CreateTokenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenViewModel.swift; sourceTree = "<group>"; };
+		00845E3B281AAA8200B61E1A /* CreateTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTokenModel.swift; sourceTree = "<group>"; };
+		00845E3F281AC56800B61E1A /* MarketListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListViewModel.swift; sourceTree = "<group>"; };
+		00845E41281AC57300B61E1A /* MarketListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketListModel.swift; sourceTree = "<group>"; };
+		00845E47281AD9A100B61E1A /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		00845E48281AD9A100B61E1A /* MarketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
+		00845E4B281ADC7500B61E1A /* MarketModulStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MarketModulStoryboard.storyboard; sourceTree = "<group>"; };
+		00845E4E281ADFD900B61E1A /* MarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewController.swift; sourceTree = "<group>"; };
+		00845E52281AE70800B61E1A /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
+		00845E54281AEB0900B61E1A /* MarketDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailModel.swift; sourceTree = "<group>"; };
+		00845E57281AF0B800B61E1A /* AssetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListViewModel.swift; sourceTree = "<group>"; };
+		00845E59281AF0C400B61E1A /* AssetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListModel.swift; sourceTree = "<group>"; };
+		00845E5B281AF31700B61E1A /* AssetModulStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AssetModulStoryboard.storyboard; sourceTree = "<group>"; };
+		00845E5D281AF3B400B61E1A /* AssetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetListTableViewCell.swift; sourceTree = "<group>"; };
+		00845E5E281AF3B400B61E1A /* AssetListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetListTableViewCell.xib; sourceTree = "<group>"; };
+		00845E63281AFA4C00B61E1A /* AssetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailViewController.swift; sourceTree = "<group>"; };
+		00845E65281AFA5900B61E1A /* AssetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailViewModel.swift; sourceTree = "<group>"; };
+		00845E67281AFA6300B61E1A /* AssetDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetDetailModel.swift; sourceTree = "<group>"; };
+		06DFFD43DA4838E0558AA914 /* Pods-BraveNewCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoinTests.release.xcconfig"; path = "Target Support Files/Pods-BraveNewCoinTests/Pods-BraveNewCoinTests.release.xcconfig"; sourceTree = "<group>"; };
+		075497BAD7C434B01ACB26D6 /* Pods-BraveNewCoin-BraveNewCoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoin-BraveNewCoinUITests.debug.xcconfig"; path = "Target Support Files/Pods-BraveNewCoin-BraveNewCoinUITests/Pods-BraveNewCoin-BraveNewCoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3ACFA461A8F7A53924F1BC6C /* Pods_BraveNewCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BraveNewCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB1BE198DE01683F0EA7589 /* Pods-BraveNewCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-BraveNewCoinTests/Pods-BraveNewCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		52DFDDCEF14FF57DBB88B41E /* Pods_BraveNewCoin_BraveNewCoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BraveNewCoin_BraveNewCoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FDAED2FB269BC8C8A982BA0 /* Pods_BraveNewCoinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BraveNewCoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BC935814ED552E8FD501772 /* Pods-BraveNewCoin-BraveNewCoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoin-BraveNewCoinUITests.release.xcconfig"; path = "Target Support Files/Pods-BraveNewCoin-BraveNewCoinUITests/Pods-BraveNewCoin-BraveNewCoinUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4C3515318CAD688BD83C437 /* Pods-BraveNewCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoin.debug.xcconfig"; path = "Target Support Files/Pods-BraveNewCoin/Pods-BraveNewCoin.debug.xcconfig"; sourceTree = "<group>"; };
+		D23DFBAD1010783272109D29 /* Pods-BraveNewCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BraveNewCoin.release.xcconfig"; path = "Target Support Files/Pods-BraveNewCoin/Pods-BraveNewCoin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00845DF4281AA37D00B61E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4131DC9E712256988B9D47E0 /* Pods_BraveNewCoin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E0A281AA37F00B61E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0F05E37DC89B1265ACAC77E /* Pods_BraveNewCoinTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E14281AA37F00B61E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C05A44033C5CB60C98DC29 /* Pods_BraveNewCoin_BraveNewCoinUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00845DEE281AA37D00B61E1A = {
+			isa = PBXGroup;
+			children = (
+				00845DF9281AA37D00B61E1A /* BraveNewCoin */,
+				00845E10281AA37F00B61E1A /* BraveNewCoinTests */,
+				00845E1A281AA37F00B61E1A /* BraveNewCoinUITests */,
+				00845DF8281AA37D00B61E1A /* Products */,
+				AB3BEA4F5EEDA8E226F16083 /* Pods */,
+				21F75518886E127568B78227 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		00845DF8281AA37D00B61E1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00845DF7281AA37D00B61E1A /* BraveNewCoin.app */,
+				00845E0D281AA37F00B61E1A /* BraveNewCoinTests.xctest */,
+				00845E17281AA37F00B61E1A /* BraveNewCoinUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00845DF9281AA37D00B61E1A /* BraveNewCoin */ = {
+			isa = PBXGroup;
+			children = (
+				00845E32281AA64300B61E1A /* ViewControllers */,
+				00845E2F281AA4A400B61E1A /* Utils */,
+				00845E2C281AA44000B61E1A /* Models */,
+				00845DFA281AA37D00B61E1A /* AppDelegate.swift */,
+				00845DFC281AA37D00B61E1A /* SceneDelegate.swift */,
+				00845E00281AA37D00B61E1A /* Main.storyboard */,
+				00845E03281AA37E00B61E1A /* Assets.xcassets */,
+				00845E05281AA37E00B61E1A /* LaunchScreen.storyboard */,
+				00845E08281AA37E00B61E1A /* Info.plist */,
+			);
+			path = BraveNewCoin;
+			sourceTree = "<group>";
+		};
+		00845E10281AA37F00B61E1A /* BraveNewCoinTests */ = {
+			isa = PBXGroup;
+			children = (
+				00845E11281AA37F00B61E1A /* BraveNewCoinTests.swift */,
+			);
+			path = BraveNewCoinTests;
+			sourceTree = "<group>";
+		};
+		00845E1A281AA37F00B61E1A /* BraveNewCoinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				00845E1B281AA37F00B61E1A /* BraveNewCoinUITests.swift */,
+				00845E1D281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift */,
+			);
+			path = BraveNewCoinUITests;
+			sourceTree = "<group>";
+		};
+		00845E2C281AA44000B61E1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				00845E2D281AA45400B61E1A /* ObjLoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00845E2F281AA4A400B61E1A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00845E2A281AA41400B61E1A /* NetworkHelpers.swift */,
+				00845E30281AA4B000B61E1A /* Constant.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		00845E32281AA64300B61E1A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				00845DFE281AA37D00B61E1A /* ChoiceViewController.swift */,
+				00845E56281AF00400B61E1A /* AssetListModul */,
+				00845E3D281AAA9200B61E1A /* CreateToken */,
+				00845E3E281AC47200B61E1A /* MarketListModul */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00845E3D281AAA9200B61E1A /* CreateToken */ = {
+			isa = PBXGroup;
+			children = (
+				00845E33281AA65A00B61E1A /* CreateTokenViewController.swift */,
+				00845E39281AAA7300B61E1A /* CreateTokenViewModel.swift */,
+				00845E3B281AAA8200B61E1A /* CreateTokenModel.swift */,
+			);
+			path = CreateToken;
+			sourceTree = "<group>";
+		};
+		00845E3E281AC47200B61E1A /* MarketListModul */ = {
+			isa = PBXGroup;
+			children = (
+				00845E50281AE6C500B61E1A /* MarketList */,
+				00845E51281AE6CE00B61E1A /* MarketDetail */,
+				00845E4B281ADC7500B61E1A /* MarketModulStoryboard.storyboard */,
+			);
+			path = MarketListModul;
+			sourceTree = "<group>";
+		};
+		00845E50281AE6C500B61E1A /* MarketList */ = {
+			isa = PBXGroup;
+			children = (
+				00845E35281AA8E300B61E1A /* MarketListViewController.swift */,
+				00845E3F281AC56800B61E1A /* MarketListViewModel.swift */,
+				00845E41281AC57300B61E1A /* MarketListModel.swift */,
+				00845E47281AD9A100B61E1A /* MarketTableViewCell.swift */,
+				00845E48281AD9A100B61E1A /* MarketTableViewCell.xib */,
+			);
+			path = MarketList;
+			sourceTree = "<group>";
+		};
+		00845E51281AE6CE00B61E1A /* MarketDetail */ = {
+			isa = PBXGroup;
+			children = (
+				00845E4E281ADFD900B61E1A /* MarketDetailViewController.swift */,
+				00845E52281AE70800B61E1A /* MarketDetailViewModel.swift */,
+				00845E54281AEB0900B61E1A /* MarketDetailModel.swift */,
+			);
+			path = MarketDetail;
+			sourceTree = "<group>";
+		};
+		00845E56281AF00400B61E1A /* AssetListModul */ = {
+			isa = PBXGroup;
+			children = (
+				00845E62281AFA3400B61E1A /* AssetDetail */,
+				00845E61281AF92D00B61E1A /* AssertList */,
+				00845E5B281AF31700B61E1A /* AssetModulStoryboard.storyboard */,
+			);
+			path = AssetListModul;
+			sourceTree = "<group>";
+		};
+		00845E61281AF92D00B61E1A /* AssertList */ = {
+			isa = PBXGroup;
+			children = (
+				00845E37281AA8ED00B61E1A /* AssetListViewController.swift */,
+				00845E57281AF0B800B61E1A /* AssetListViewModel.swift */,
+				00845E59281AF0C400B61E1A /* AssetListModel.swift */,
+				00845E5D281AF3B400B61E1A /* AssetListTableViewCell.swift */,
+				00845E5E281AF3B400B61E1A /* AssetListTableViewCell.xib */,
+			);
+			path = AssertList;
+			sourceTree = "<group>";
+		};
+		00845E62281AFA3400B61E1A /* AssetDetail */ = {
+			isa = PBXGroup;
+			children = (
+				00845E63281AFA4C00B61E1A /* AssetDetailViewController.swift */,
+				00845E65281AFA5900B61E1A /* AssetDetailViewModel.swift */,
+				00845E67281AFA6300B61E1A /* AssetDetailModel.swift */,
+			);
+			path = AssetDetail;
+			sourceTree = "<group>";
+		};
+		21F75518886E127568B78227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ACFA461A8F7A53924F1BC6C /* Pods_BraveNewCoin.framework */,
+				52DFDDCEF14FF57DBB88B41E /* Pods_BraveNewCoin_BraveNewCoinUITests.framework */,
+				5FDAED2FB269BC8C8A982BA0 /* Pods_BraveNewCoinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3BEA4F5EEDA8E226F16083 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4C3515318CAD688BD83C437 /* Pods-BraveNewCoin.debug.xcconfig */,
+				D23DFBAD1010783272109D29 /* Pods-BraveNewCoin.release.xcconfig */,
+				075497BAD7C434B01ACB26D6 /* Pods-BraveNewCoin-BraveNewCoinUITests.debug.xcconfig */,
+				7BC935814ED552E8FD501772 /* Pods-BraveNewCoin-BraveNewCoinUITests.release.xcconfig */,
+				3CB1BE198DE01683F0EA7589 /* Pods-BraveNewCoinTests.debug.xcconfig */,
+				06DFFD43DA4838E0558AA914 /* Pods-BraveNewCoinTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00845DF6281AA37D00B61E1A /* BraveNewCoin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00845E21281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoin" */;
+			buildPhases = (
+				580FE66967656887085FB7F2 /* [CP] Check Pods Manifest.lock */,
+				00845DF3281AA37D00B61E1A /* Sources */,
+				00845DF4281AA37D00B61E1A /* Frameworks */,
+				00845DF5281AA37D00B61E1A /* Resources */,
+				33635B32B1E825F9548225ED /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BraveNewCoin;
+			productName = BraveNewCoin;
+			productReference = 00845DF7281AA37D00B61E1A /* BraveNewCoin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		00845E0C281AA37F00B61E1A /* BraveNewCoinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00845E24281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoinTests" */;
+			buildPhases = (
+				2CCCD9D26404150DD94908F7 /* [CP] Check Pods Manifest.lock */,
+				00845E09281AA37F00B61E1A /* Sources */,
+				00845E0A281AA37F00B61E1A /* Frameworks */,
+				00845E0B281AA37F00B61E1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00845E0F281AA37F00B61E1A /* PBXTargetDependency */,
+			);
+			name = BraveNewCoinTests;
+			productName = BraveNewCoinTests;
+			productReference = 00845E0D281AA37F00B61E1A /* BraveNewCoinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00845E16281AA37F00B61E1A /* BraveNewCoinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00845E27281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoinUITests" */;
+			buildPhases = (
+				CA01286F03F19E00B71E173E /* [CP] Check Pods Manifest.lock */,
+				00845E13281AA37F00B61E1A /* Sources */,
+				00845E14281AA37F00B61E1A /* Frameworks */,
+				00845E15281AA37F00B61E1A /* Resources */,
+				CF0A0D68AE747D0EA5EA724B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00845E19281AA37F00B61E1A /* PBXTargetDependency */,
+			);
+			name = BraveNewCoinUITests;
+			productName = BraveNewCoinUITests;
+			productReference = 00845E17281AA37F00B61E1A /* BraveNewCoinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00845DEF281AA37D00B61E1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					00845DF6281AA37D00B61E1A = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					00845E0C281AA37F00B61E1A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 00845DF6281AA37D00B61E1A;
+					};
+					00845E16281AA37F00B61E1A = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 00845DF6281AA37D00B61E1A;
+					};
+				};
+			};
+			buildConfigurationList = 00845DF2281AA37D00B61E1A /* Build configuration list for PBXProject "BraveNewCoin" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00845DEE281AA37D00B61E1A;
+			productRefGroup = 00845DF8281AA37D00B61E1A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00845DF6281AA37D00B61E1A /* BraveNewCoin */,
+				00845E0C281AA37F00B61E1A /* BraveNewCoinTests */,
+				00845E16281AA37F00B61E1A /* BraveNewCoinUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00845DF5281AA37D00B61E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00845E07281AA37E00B61E1A /* LaunchScreen.storyboard in Resources */,
+				00845E60281AF3B400B61E1A /* AssetListTableViewCell.xib in Resources */,
+				00845E04281AA37E00B61E1A /* Assets.xcassets in Resources */,
+				00845E5C281AF31700B61E1A /* AssetModulStoryboard.storyboard in Resources */,
+				00845E02281AA37D00B61E1A /* Main.storyboard in Resources */,
+				00845E4A281AD9A100B61E1A /* MarketTableViewCell.xib in Resources */,
+				00845E4C281ADC7500B61E1A /* MarketModulStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E0B281AA37F00B61E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E15281AA37F00B61E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CCCD9D26404150DD94908F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BraveNewCoinTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33635B32B1E825F9548225ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin/Pods-BraveNewCoin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin/Pods-BraveNewCoin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin/Pods-BraveNewCoin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		580FE66967656887085FB7F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BraveNewCoin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA01286F03F19E00B71E173E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BraveNewCoin-BraveNewCoinUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF0A0D68AE747D0EA5EA724B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin-BraveNewCoinUITests/Pods-BraveNewCoin-BraveNewCoinUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin-BraveNewCoinUITests/Pods-BraveNewCoin-BraveNewCoinUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BraveNewCoin-BraveNewCoinUITests/Pods-BraveNewCoin-BraveNewCoinUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00845DF3281AA37D00B61E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00845E36281AA8E300B61E1A /* MarketListViewController.swift in Sources */,
+				00845E38281AA8ED00B61E1A /* AssetListViewController.swift in Sources */,
+				00845E2E281AA45400B61E1A /* ObjLoginModel.swift in Sources */,
+				00845E66281AFA5900B61E1A /* AssetDetailViewModel.swift in Sources */,
+				00845E2B281AA41400B61E1A /* NetworkHelpers.swift in Sources */,
+				00845E68281AFA6300B61E1A /* AssetDetailModel.swift in Sources */,
+				00845E55281AEB0900B61E1A /* MarketDetailModel.swift in Sources */,
+				00845DFF281AA37D00B61E1A /* ChoiceViewController.swift in Sources */,
+				00845E42281AC57300B61E1A /* MarketListModel.swift in Sources */,
+				00845DFB281AA37D00B61E1A /* AppDelegate.swift in Sources */,
+				00845E49281AD9A100B61E1A /* MarketTableViewCell.swift in Sources */,
+				00845DFD281AA37D00B61E1A /* SceneDelegate.swift in Sources */,
+				00845E5F281AF3B400B61E1A /* AssetListTableViewCell.swift in Sources */,
+				00845E53281AE70800B61E1A /* MarketDetailViewModel.swift in Sources */,
+				00845E5A281AF0C400B61E1A /* AssetListModel.swift in Sources */,
+				00845E4F281ADFD900B61E1A /* MarketDetailViewController.swift in Sources */,
+				00845E3C281AAA8200B61E1A /* CreateTokenModel.swift in Sources */,
+				00845E64281AFA4C00B61E1A /* AssetDetailViewController.swift in Sources */,
+				00845E58281AF0B800B61E1A /* AssetListViewModel.swift in Sources */,
+				00845E40281AC56800B61E1A /* MarketListViewModel.swift in Sources */,
+				00845E34281AA65A00B61E1A /* CreateTokenViewController.swift in Sources */,
+				00845E3A281AAA7300B61E1A /* CreateTokenViewModel.swift in Sources */,
+				00845E31281AA4B000B61E1A /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E09281AA37F00B61E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00845E12281AA37F00B61E1A /* BraveNewCoinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00845E13281AA37F00B61E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00845E1C281AA37F00B61E1A /* BraveNewCoinUITests.swift in Sources */,
+				00845E1E281AA37F00B61E1A /* BraveNewCoinUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00845E0F281AA37F00B61E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00845DF6281AA37D00B61E1A /* BraveNewCoin */;
+			targetProxy = 00845E0E281AA37F00B61E1A /* PBXContainerItemProxy */;
+		};
+		00845E19281AA37F00B61E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00845DF6281AA37D00B61E1A /* BraveNewCoin */;
+			targetProxy = 00845E18281AA37F00B61E1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		00845E00281AA37D00B61E1A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00845E01281AA37D00B61E1A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00845E05281AA37E00B61E1A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00845E06281AA37E00B61E1A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00845E1F281AA37F00B61E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00845E20281AA37F00B61E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00845E22281AA37F00B61E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4C3515318CAD688BD83C437 /* Pods-BraveNewCoin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveNewCoin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00845E23281AA37F00B61E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23DFBAD1010783272109D29 /* Pods-BraveNewCoin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BraveNewCoin/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00845E25281AA37F00B61E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB1BE198DE01683F0EA7589 /* Pods-BraveNewCoinTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveNewCoin.app/BraveNewCoin";
+			};
+			name = Debug;
+		};
+		00845E26281AA37F00B61E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06DFFD43DA4838E0558AA914 /* Pods-BraveNewCoinTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BraveNewCoin.app/BraveNewCoin";
+			};
+			name = Release;
+		};
+		00845E28281AA37F00B61E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 075497BAD7C434B01ACB26D6 /* Pods-BraveNewCoin-BraveNewCoinUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BraveNewCoin;
+			};
+			name = Debug;
+		};
+		00845E29281AA37F00B61E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BC935814ED552E8FD501772 /* Pods-BraveNewCoin-BraveNewCoinUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y5CH37RV59;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BraveNewCoinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BraveNewCoin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00845DF2281AA37D00B61E1A /* Build configuration list for PBXProject "BraveNewCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00845E1F281AA37F00B61E1A /* Debug */,
+				00845E20281AA37F00B61E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00845E21281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00845E22281AA37F00B61E1A /* Debug */,
+				00845E23281AA37F00B61E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00845E24281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00845E25281AA37F00B61E1A /* Debug */,
+				00845E26281AA37F00B61E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00845E27281AA37F00B61E1A /* Build configuration list for PBXNativeTarget "BraveNewCoinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00845E28281AA37F00B61E1A /* Debug */,
+				00845E29281AA37F00B61E1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00845DEF281AA37D00B61E1A /* Project object */;
+}
